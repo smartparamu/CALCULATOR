@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=0.70">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <marquee behavior="scrolling" direction="left">
+        <h1>HELLO WORLD I AM PARAMESWARAN</h1>
+    </marquee>
+    <div class="container">
+        <input type="display-box" type="text" id="inputscreen"disabled/>
+        <input type="button" value="C" class="button clear" onclick="clearscreen()">
+        <div>
+            <input type="button" value="^" class="button operator" onclick="display('**')">
+            <input type="button" value="%" class="button operator" onclick="display(value)">
+            <input type="button" value="DEL" class="button delete" onclick="del()">
+            <input type="button" value="÷" class="button operator" onclick="display('/')">
+        </div>
+        <div>
+            <input type="button" value="7" class="button number" onclick="display(value)"> 
+            <input type="button" value="8" class="button number" onclick="display(value)">
+            <input type="button" value="9" class="button num number" onclick="display(value)">
+            <input type="button" value="*" class="button operator"  onclick="display(value)">
+        </div>
+        <div>
+            <input type="button" value="4" class="button number" onclick="display(value)">
+            <input type="button" value="5" class="button number" onclick="display(value)"> 
+            <input type="button" value="6" class="button number" onclick="display(value)">
+            <Input type="button" value="-" class="button operator" onclick="display(value)">
+        </div>
+        <div>
+            <input type="button" value="1" class="button number "onclick="display(value)">
+            <input type="button" value="2" class="button number" onclick="display(value)">
+            <input type="button" value="3" class="button number" onclick="display(value)"> 
+            <input type="button" value="+" class="button operator" onclick="display(value)">
+        </div>
+        <div>
+            <input type="button" value="00" class="button number" onclick="display(value)">
+            <input type="button" value="0" class="button number" onclick="display(value)">
+            <input type="button" value="." class="button point" onclick="display(value)">
+            <input type="button" value="ANS" class="button result" onclick="calculate()">
+        </div>
+    </div>
+<script src="calc.js"></script>
+</body>
+</html>
